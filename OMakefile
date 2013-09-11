@@ -1,0 +1,4 @@
+%.c: %.xs src/perl/common/typemap src/perl/irc/typemap src/perl/textui/typemap src/perl/ui/typemap
+  xsubpp $(mapprefix -typemap, $(filter-out %.xs, $^)) $< > $@
+
+#recurse-into ($(glob D, *))
