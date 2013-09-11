@@ -2,7 +2,7 @@ language: c
 script: dpkg-buildpackage -b -us -uc
 
 install:
-   - sudo apt-get install omake ocaml-nox
+   - sudo apt-get install omake ocaml-nox libperl-dev
 
 # whitelist
 branches:
