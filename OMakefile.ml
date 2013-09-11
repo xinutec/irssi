@@ -377,15 +377,18 @@ install Program ".DEFAULT" [
     "-I$(dir .)/src/irc";
     "-I$(dir .)/src/irc/core";
     "-I$(dir .)/src/irc/dcc";
-    "-DSYSCONFDIR=\"irssi/etc\"";
-    "-DMODULEDIR=\"irssi/modules\"";
-    "-DHELPDIR=\"irssi/help\"";
-    "-DTHEMESDIR=\"irssi/themes\"";
-    "-DSCRIPTDIR=\"irssi/scripts\"";
+
+    "-DSYSCONFDIR=\"/usr/share/irssi/etc\"";
+    "-DMODULEDIR=\"/usr/share/irssi/modules\"";
+    "-DHELPDIR=\"/usr/share/irssi/help\"";
+    "-DTHEMESDIR=\"/usr/share/irssi/themes\"";
+    "-DSCRIPTDIR=\"/usr/share/irssi/scripts\"";
+
     "-DHAVE_CONFIG_H";
     "-DPERL_USE_LIB=\"\"";
     "-DPERL_STATIC_LIBS=1";
     "-D_GNU_SOURCE";
+
     "$(shell $(PERL) -MExtUtils::Embed -e ccopts)";
   ]);
 
@@ -431,10 +434,23 @@ install Program ".DEFAULT" [
   ]);
 
   Rule ("irssi-version.h", "irssi-version.sh", [
-    "sh $< ../../../../src/net/irssi > $@";
+    "sh $< $(rootdir)/$(removeprefix $(fullname $(builddir)), $(fullname .)) > $@";
   ]);
 
   Rule ("src/perl/perl-signals-list.h", "docs/signals.txt src/perl/get-signals.pl", [
     "perl src/perl/get-signals.pl < $< > $@";
   ]);
+
+  Code "
+
+.DEFAULT: $(install-target $(datadir)/irssi/scripts, src/perl/common/Irssi.pm)
+.DEFAULT: $(install-target $(datadir)/irssi/scripts/Irssi, src/perl/irc/Irc.pm src/perl/textui/TextUI.pm src/perl/ui/UI.pm)
+
+install:
+  mkdir -p $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi
+  install -m 644 $(datadir)/irssi/scripts/Irssi.pm $(DESTDIR)$(prefix)/share/irssi/scripts/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/Irc.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/TextUI.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/UI.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
+";
 ]

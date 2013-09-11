@@ -1,5 +1,4 @@
 #define NEED_PERL_H
-#define HAVE_CONFIG_H
 #include "../module.h"
 #include <XSUB.h>
 
