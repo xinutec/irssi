@@ -29,7 +29,7 @@
 #include "irc-channels.h"
 #include "irc-queries.h"
 
-#include "../core/module-formats.h"
+#include "../../core/module-formats.h"
 #include "module-formats.h"
 #include "printtext.h"
 #include "fe-messages.h"

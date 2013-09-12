@@ -20,6 +20,7 @@
 
 #include "module.h"
 #include "module-formats.h"
+#include "irssi.h"
 #include "signals.h"
 #include "commands.h"
 #include "levels.h"

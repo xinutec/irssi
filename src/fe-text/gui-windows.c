@@ -19,6 +19,7 @@
 */
 
 #include "module.h"
+#include "irssi.h"
 #include "signals.h"
 #include "misc.h"
 #include "settings.h"

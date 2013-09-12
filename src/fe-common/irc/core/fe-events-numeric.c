@@ -31,7 +31,7 @@
 #include "nicklist.h"
 #include "mode-lists.h"
 
-#include "../core/module-formats.h"
+#include "../../core/module-formats.h"
 #include "printtext.h"
 #include "fe-channels.h"
 #include "fe-irc-server.h"

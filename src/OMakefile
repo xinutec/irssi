@@ -1,0 +1,14 @@
+OM_CFLAGS[] =
+  -std=gnu89
+
+OM_CPPFLAGS[] =
+  -I$(dir .)
+  -DSYSCONFDIR="/usr/share/irssi/etc"
+  -DMODULEDIR="/usr/share/irssi/modules"
+  -DHELPDIR="/usr/share/irssi/help"
+  -DTHEMESDIR="/usr/share/irssi/themes"
+  -DSCRIPTDIR="/usr/share/irssi/scripts"
+  -DHAVE_CONFIG_H
+  -D_GNU_SOURCE
+
+recurse-into ($(glob D, *))

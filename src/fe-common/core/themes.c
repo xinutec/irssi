@@ -31,7 +31,7 @@
 #include "themes.h"
 #include "printtext.h"
 
-#include "default-theme.h"
+#include "default.theme.h"
 
 GSList *themes;
 THEME_REC *current_theme;
