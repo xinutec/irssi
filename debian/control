@@ -5,7 +5,8 @@ Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
 Uploaders: 
   Pippijn van Steenhoven <pip88nl@gmail.com>
 Build-Depends:
-  omake,
+  obuild,
+  libperl-dev,
   debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 Homepage: https://github.com/pippijn/irssi
