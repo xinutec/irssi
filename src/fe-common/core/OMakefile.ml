@@ -72,7 +72,7 @@ install Library ".DEFAULT" [
     "irssi-config";
   ];
 
-  Rule ("$'default.theme.h'", "../../../file2header.sh default.theme", [
+  Rule ("default.theme.h", "../../../file2header.sh default.theme", [
     "$+ default_theme > $@";
   ]);
 

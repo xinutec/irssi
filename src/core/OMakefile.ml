@@ -106,7 +106,7 @@ install Library ".DEFAULT" [
     "irssi-config";
   ];
 
-  Rule ("$'default.conf.h'", "../../file2header.sh default.conf", [
+  Rule ("default.conf.h", "../../file2header.sh default.conf", [
     "$+ default_config > $@";
   ]);
 
