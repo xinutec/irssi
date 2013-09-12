@@ -1,1 +1,11 @@
 recurse-into ($(glob D, *))
+
+.DEFAULT: $(install-target $(datadir)/irssi/scripts, src/perl/common/Irssi.pm)
+.DEFAULT: $(install-target $(datadir)/irssi/scripts/Irssi, src/perl/irc/Irc.pm src/perl/textui/TextUI.pm src/perl/ui/UI.pm)
+
+install:
+  mkdir -p $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi
+  install -m 644 $(datadir)/irssi/scripts/Irssi.pm $(DESTDIR)$(prefix)/share/irssi/scripts/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/Irc.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/TextUI.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
+  install -m 644 $(datadir)/irssi/scripts/Irssi/UI.pm $(DESTDIR)$(prefix)/share/irssi/scripts/Irssi/
