@@ -7,11 +7,15 @@ install Program ".DEFAULT" [
     "main.c";
   ];
 
+  Headers [
+    "module.h";
+  ];
+
   CRequires [
     "crypto";
     "glib-2.0";
     "gmodule-2.0";
-    "ncursesw";
+    "ncurses";
     "ssl";
 
     "irssi-core";

@@ -1,5 +1,19 @@
 OM_CFLAGS[] =
   -std=gnu89
+  -Wall
+  -Wextra
+  -Werror
+  -Wno-empty-body
+  -Wno-enum-compare
+  -Wno-missing-field-initializers
+  -Wno-sign-compare
+  -Wno-unused
+  -Wno-unused-parameter
+  -Wno-error=type-limits
+  -Wno-error=parentheses
+  -Wno-error=missing-braces
+  -Wno-error=deprecated-declarations
+  -Wno-error=pointer-sign
 
 OM_CPPFLAGS[] =
   -I$(dir .)

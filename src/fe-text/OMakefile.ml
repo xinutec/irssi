@@ -52,7 +52,7 @@ install Library ".DEFAULT" [
 
   CRequires [
     "glib-2.0";
-    "ncursesw";
+    "ncurses";
 
     "irssi-core";
     "irssi-fe-core";

@@ -25,6 +25,7 @@
 
 #include "themes.h"
 
+#include "irssi.h"
 #include "statusbar.h"
 #include "statusbar-config.h"
 #include "gui-windows.h"

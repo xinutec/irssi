@@ -23,6 +23,7 @@
 #include "commands.h"
 #include "settings.h"
 
+#include "irssi.h"
 #include "term.h"
 #include "mainwindows.h"
 

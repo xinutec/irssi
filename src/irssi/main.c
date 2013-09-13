@@ -31,15 +31,10 @@
 
 #include "printtext.h"
 #include "fe-common-core.h"
-#include "themes.h"
 
-#include "term.h"
-#include "gui-entry.h"
-#include "mainwindows.h"
 #include "gui-printtext.h"
 #include "gui-readline.h"
 #include "statusbar.h"
-#include "gui-windows.h"
 #include "irssi-version.h"
 
 #include <signal.h>
