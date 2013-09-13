@@ -9,11 +9,12 @@ OM_CFLAGS[] =
   -Wno-sign-compare
   -Wno-unused
   -Wno-unused-parameter
-  -Wno-error=type-limits
-  -Wno-error=parentheses
-  -Wno-error=missing-braces
   -Wno-error=deprecated-declarations
+  -Wno-error=format-security
+  -Wno-error=missing-braces
+  -Wno-error=parentheses
   -Wno-error=pointer-sign
+  -Wno-error=type-limits
 
 OM_CPPFLAGS[] =
   -I$(dir .)
