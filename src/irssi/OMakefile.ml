@@ -26,7 +26,8 @@ install Program ".DEFAULT" [
     "irssi-fe-irc-dcc";
     "irssi-fe-irc-notifylist";
     "irssi-fe-text";
-    "irssi-perl";
+    "irssi-perl-core";
+    "irssi-perl-fe";
   ];
 
   Var ("OM_CPPFLAGS", "$(OM_CPPFLAGS) $(shell $(PERL) -MExtUtils::Embed -e ccopts)");

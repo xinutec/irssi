@@ -1,6 +1,6 @@
 install Library ".DEFAULT" [
   (* Target *)
-  Name		"irssi-perl";
+  Name		"irssi-perl-core";
   Description	"perl";
   Version	"0.8.16";
 
@@ -35,10 +35,8 @@ install Library ".DEFAULT" [
     "ui/UI.xs";
     "ui/Window.xs";
 
-    "module-formats.c";
     "perl-common.c";
     "perl-core.c";
-    "perl-fe.c";
     "perl-signals.c";
     "perl-sources.c";
   ];
@@ -49,8 +47,6 @@ install Library ".DEFAULT" [
     "textui/module.h";
     "ui/module.h";
 
-    "module-fe.h";
-    "module-formats.h";
     "module.h";
     "perl-common.h";
     "perl-core.h";
@@ -79,11 +75,11 @@ install Library ".DEFAULT" [
     "xsubpp $(mapprefix -typemap, $(filter-out %.xs, $^)) $< > $@";
   ]);
 
-  Rule ("irssi-core.pl.h", "../../file2header.sh irssi-core.pl", [
+  Rule ("irssi-core.pl.h", "../../../file2header.sh irssi-core.pl", [
     "$+ irssi_core_code > $@";
   ]);
 
-  Rule ("perl-signals-list.h", "../../docs/signals.txt get-signals.pl", [
+  Rule ("perl-signals-list.h", "../../../docs/signals.txt get-signals.pl", [
     "perl get-signals.pl < $< > $@";
   ]);
 
@@ -95,10 +91,10 @@ install Library ".DEFAULT" [
   ");
 
   Array ("CPPFLAGS", [
-    "-I$(dir ../fe-common/core)";
-    "-I$(dir ../fe-text)";
-    "-I$(dir ../irc)";
-    "-I$(dir ../irc/core)";
+    "-I$(dir ../../fe-common/core)";
+    "-I$(dir ../../fe-text)";
+    "-I$(dir ../../irc)";
+    "-I$(dir ../../irc/core)";
 
     "-DPERL_USE_LIB=\"\"";
     "-DPERL_STATIC_LIBS=1";

@@ -22,10 +22,10 @@
 #include "queries.h"
 #include "nicklist.h"
 
-#include "perl/perl-core.h"
-#include "perl/perl-common.h"
-#include "perl/perl-signals.h"
-#include "perl/perl-sources.h"
+#include "perl/core/perl-core.h"
+#include "perl/core/perl-common.h"
+#include "perl/core/perl-signals.h"
+#include "perl/core/perl-sources.h"
 
 typedef COMMAND_REC *Irssi__Command;
 typedef LOG_REC *Irssi__Log;
