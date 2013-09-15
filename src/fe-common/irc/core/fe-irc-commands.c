@@ -27,12 +27,12 @@
 
 #include "levels.h"
 #include "servers.h"
-#include "mode-lists.h"
+#include "irc/core/mode-lists.h"
 #include "nicklist.h"
-#include "irc-commands.h"
-#include "irc-servers.h"
-#include "irc-channels.h"
-#include "irc-queries.h"
+#include "irc/core/irc-commands.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
+#include "irc/core/irc-queries.h"
 
 #include "fe-queries.h"
 #include "fe-windows.h"

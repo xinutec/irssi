@@ -27,11 +27,11 @@
 #include "servers-setup.h"
 
 #include "levels.h"
-#include "irc-chatnets.h"
-#include "irc-servers.h"
-#include "irc-channels.h"
+#include "irc/core/irc-chatnets.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
 #include "servers-reconnect.h"
-#include "irc-servers-setup.h"
+#include "irc/core/irc-servers-setup.h"
 
 #include "fe-windows.h"
 #include "printtext.h"

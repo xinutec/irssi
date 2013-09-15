@@ -26,16 +26,16 @@
 
 #include "levels.h"
 #include "servers.h"
-#include "servers-redirect.h"
+#include "irc/core/servers-redirect.h"
 #include "servers-reconnect.h"
 #include "queries.h"
 #include "ignore.h"
 #include "recode.h"
 
-#include "irc-servers.h"
-#include "irc-channels.h"
-#include "irc-nicklist.h"
-#include "irc-masks.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
+#include "irc/core/irc-nicklist.h"
+#include "irc/core/irc-masks.h"
 
 #include "printtext.h"
 #include "fe-queries.h"

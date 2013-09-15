@@ -25,10 +25,10 @@
 #include "misc.h"
 #include "settings.h"
 
-#include "irc-servers.h"
-#include "modes.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/modes.h"
 #include "ignore.h"
-#include "netsplit.h"
+#include "irc/core/netsplit.h"
 
 #include "printtext.h"
 

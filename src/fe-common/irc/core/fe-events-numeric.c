@@ -26,10 +26,10 @@
 #include "levels.h"
 #include "recode.h"
 
-#include "irc-servers.h"
-#include "irc-channels.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
 #include "nicklist.h"
-#include "mode-lists.h"
+#include "irc/core/mode-lists.h"
 
 #include "../../core/module-formats.h"
 #include "printtext.h"

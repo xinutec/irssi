@@ -25,9 +25,9 @@
 #include "ignore.h"
 #include "settings.h"
 
-#include "irc-servers.h"
-#include "irc-channels.h"
-#include "irc-queries.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
+#include "irc/core/irc-queries.h"
 
 #include "../../core/module-formats.h"
 #include "module-formats.h"

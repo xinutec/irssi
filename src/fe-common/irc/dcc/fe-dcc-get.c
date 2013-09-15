@@ -22,9 +22,9 @@
 #include "signals.h"
 #include "levels.h"
 
-#include "irc.h"
-#include "dcc-file.h"
-#include "dcc-get.h"
+#include "irc/core/irc.h"
+#include "irc/dcc/dcc-file.h"
+#include "irc/dcc/dcc-get.h"
 
 #include "module-formats.h"
 #include "printtext.h"

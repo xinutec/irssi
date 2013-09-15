@@ -25,9 +25,9 @@
 #include "misc.h"
 #include "settings.h"
 
-#include "irc-servers.h"
-#include "irc-channels.h"
-#include "modes.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
+#include "irc/core/modes.h"
 #include "ignore.h"
 
 #include "printtext.h"

@@ -24,7 +24,7 @@
 #include "network.h"
 #include "levels.h"
 
-#include "dcc-server.h"
+#include "irc/dcc/dcc-server.h"
 
 #include "module-formats.h"
 #include "printtext.h"

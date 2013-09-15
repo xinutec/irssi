@@ -29,6 +29,6 @@ install Library ".DEFAULT" [
     "irssi-irc-dcc";
   ];
 
-  Var ("CPPFLAGS", "-I../../../irc/core -I../../../irc/dcc -I../../core");
+  Var ("CPPFLAGS", "-I../../core");
 
 ]

@@ -22,9 +22,9 @@
 #include "signals.h"
 #include "levels.h"
 
-#include "irc-servers.h"
-#include "irc-queries.h"
-#include "dcc-chat.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-queries.h"
+#include "irc/dcc/dcc-chat.h"
 
 #include "module-formats.h"
 #include "printtext.h"

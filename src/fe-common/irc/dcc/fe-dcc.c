@@ -25,10 +25,10 @@
 #include "levels.h"
 #include "settings.h"
 
-#include "dcc-chat.h"
-#include "dcc-file.h"
-#include "dcc-get.h"
-#include "dcc-send.h"
+#include "irc/dcc/dcc-chat.h"
+#include "irc/dcc/dcc-file.h"
+#include "irc/dcc/dcc-get.h"
+#include "irc/dcc/dcc-send.h"
 
 #include "module-formats.h"
 #include "printtext.h"

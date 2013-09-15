@@ -28,8 +28,8 @@
 #include "settings.h"
 
 #include "levels.h"
-#include "irc-servers.h"
-#include "irc-chatnets.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-chatnets.h"
 #include "irc/notifylist/notifylist.h"
 
 #include "themes.h"

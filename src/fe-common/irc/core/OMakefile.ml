@@ -40,6 +40,6 @@ install Library ".DEFAULT" [
     "irssi-fe-irc-notifylist";
   ];
 
-  Var ("CPPFLAGS", "-I../../../irc/core -I../../core");
+  Var ("CPPFLAGS", "-I../../core");
 
 ]

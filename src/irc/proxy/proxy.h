@@ -4,8 +4,8 @@
 #include "common.h"
 
 #include "network.h"
-#include "irc.h"
-#include "irc-servers.h"
+#include "irc/core/irc.h"
+#include "irc/core/irc-servers.h"
 
 typedef struct {
 	int port;

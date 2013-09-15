@@ -8,7 +8,7 @@
 #include "settings.h"
 #include "recode.h"
 
-#include "irc-servers.h"
+#include "irc/core/irc-servers.h"
 
 #include "printtext.h"
 

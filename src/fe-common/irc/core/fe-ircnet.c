@@ -26,8 +26,8 @@
 #include "misc.h"
 #include "chatnets.h"
 
-#include "irc-servers.h"
-#include "irc-chatnets.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-chatnets.h"
 #include "printtext.h"
 
 static void cmd_network_list(void)

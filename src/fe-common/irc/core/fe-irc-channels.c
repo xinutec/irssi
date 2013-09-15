@@ -23,9 +23,9 @@
 #include "signals.h"
 #include "levels.h"
 
-#include "irc-servers.h"
-#include "irc-channels.h"
-#include "channel-rejoin.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-channels.h"
+#include "irc/core/channel-rejoin.h"
 
 #include "printtext.h"
 #include "fe-windows.h"

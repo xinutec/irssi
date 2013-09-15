@@ -24,9 +24,9 @@
 #include "misc.h"
 #include "settings.h"
 
-#include "dcc-file.h"
-#include "dcc-send.h"
-#include "dcc-queue.h"
+#include "irc/dcc/dcc-file.h"
+#include "irc/dcc/dcc-send.h"
+#include "irc/dcc/dcc-queue.h"
 
 #include "module-formats.h"
 #include "printtext.h"

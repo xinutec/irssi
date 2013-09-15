@@ -24,10 +24,10 @@
 #include "levels.h"
 #include "settings.h"
 
-#include "irc-servers.h"
-#include "irc-commands.h"
+#include "irc/core/irc-servers.h"
+#include "irc/core/irc-commands.h"
 #include "ignore.h"
-#include "netsplit.h"
+#include "irc/core/netsplit.h"
 
 #include "printtext.h"
 

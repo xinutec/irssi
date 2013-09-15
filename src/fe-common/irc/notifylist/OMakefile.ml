@@ -22,6 +22,6 @@ install Library ".DEFAULT" [
     "irssi-irc-notifylist";
   ];
 
-  Var ("CPPFLAGS", "-I../../../irc/core -I../../core");
+  Var ("CPPFLAGS", "-I../../core");
 
 ]
