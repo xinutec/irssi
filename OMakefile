@@ -1,4 +1,6 @@
-recurse-into ($(glob D, *))
+Version		= 0.8.16
+
+recurse ()
 
 .DEFAULT: $(install-target $(datadir)/irssi/scripts, src/perl/core/common/Irssi.pm)
 .DEFAULT: $(install-target $(datadir)/irssi/scripts/Irssi, src/perl/core/irc/Irc.pm src/perl/core/textui/TextUI.pm src/perl/core/ui/UI.pm)

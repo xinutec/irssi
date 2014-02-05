@@ -26,4 +26,4 @@ OM_CPPFLAGS[] =
   -DHAVE_CONFIG_H
   -D_GNU_SOURCE
 
-recurse-into ($(glob D, *))
+recurse ()

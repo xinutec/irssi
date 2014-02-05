@@ -1,0 +1,34 @@
+Name		= irssi-irc-dcc
+Description	= DCC IRC library
+
+C-Sources[] =
+  dcc-autoget.c
+  dcc.c
+  dcc-chat.c
+  dcc-get.c
+  dcc-queue.c
+  dcc-resume.c
+  dcc-send.c
+  dcc-server.c
+
+C-Headers[] =
+  dcc-chat.h
+  dcc-file.h
+  dcc-file-rec.h
+  dcc-get.h
+  dcc.h
+  dcc-queue.h
+  dcc-rec.h
+  dcc-send.h
+  dcc-server.h
+  module.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-irc-core
+
+OM_CPPFLAGS += -I../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

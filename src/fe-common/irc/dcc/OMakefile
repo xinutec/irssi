@@ -1,0 +1,28 @@
+Name		= irssi-fe-irc-dcc
+Description	= Core Irssi library
+
+C-Sources[] =
+  fe-dcc.c
+  fe-dcc-chat.c
+  fe-dcc-chat-messages.c
+  fe-dcc-get.c
+  fe-dcc-send.c
+  fe-dcc-server.c
+  module-formats.c
+
+C-Headers[] =
+  fe-dcc.h
+  module-formats.h
+  module.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-fe-core
+  irssi-irc-core
+  irssi-irc-dcc
+
+OM_CPPFLAGS += -I../../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

@@ -1,0 +1,21 @@
+Name		= irssi-fe-irc-notifylist
+Description	= Core Irssi library
+
+C-Sources[] =
+  fe-notifylist.c
+  module-formats.c
+
+C-Headers[] =
+  module-formats.h
+  module.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-fe-core
+  irssi-irc-notifylist
+
+OM_CPPFLAGS += -I../../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

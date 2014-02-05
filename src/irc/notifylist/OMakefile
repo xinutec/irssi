@@ -1,0 +1,25 @@
+Name		= irssi-irc-notifylist
+Description	= Notifylist plugin
+
+C-Sources[] =
+  notify-commands.c
+  notify-ison.c
+  notifylist.c
+  notify-setup.c
+  notify-whois.c
+
+C-Headers[] =
+  module.h
+  notifylist.h
+  notify-setup.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-config
+  irssi-irc-core
+
+OM_CPPFLAGS += -I../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

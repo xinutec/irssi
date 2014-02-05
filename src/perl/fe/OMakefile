@@ -1,0 +1,23 @@
+Name		= irssi-perl-fe
+Description	= perl
+
+C-Sources[] =
+  module-formats.c
+  perl-fe.c
+
+C-Headers[] =
+  module-fe.h
+  module-formats.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-fe-core
+  irssi-perl-core
+
+OM_CPPFLAGS[] +=
+  -I$(dir ../core)
+  -I$(dir ../../fe-common/core)
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

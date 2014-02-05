@@ -1,0 +1,22 @@
+Name		= irssi-irc-proxy
+Description	= Proxy plugin
+
+C-Sources[] =
+  dump.c
+  listen.c
+  proxy.c
+
+C-Headers[] =
+  module.h
+  proxy.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-fe-core
+  irssi-irc-core
+
+OM_CPPFLAGS += -I../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

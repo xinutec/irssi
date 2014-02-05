@@ -1,0 +1,59 @@
+Name		= irssi-irc-core
+Description	= Core Irssi library
+Version		= 0.8.16
+
+C-Sources[] =
+  bans.c
+  channel-events.c
+  channel-rejoin.c
+  channels-query.c
+  ctcp.c
+  irc.c
+  irc-channels.c
+  irc-channels-setup.c
+  irc-chatnets.c
+  irc-commands.c
+  irc-core.c
+  irc-expandos.c
+  irc-masks.c
+  irc-nicklist.c
+  irc-queries.c
+  irc-servers.c
+  irc-servers-reconnect.c
+  irc-servers-setup.c
+  irc-session.c
+  lag.c
+  massjoin.c
+  mode-lists.c
+  modes.c
+  netsplit.c
+  servers-idle.c
+  servers-redirect.c
+
+C-Headers[] =
+  bans.h
+  channel-rejoin.h
+  ctcp.h
+  irc-channels.h
+  irc-chatnets.h
+  irc-commands.h
+  irc.h
+  irc-masks.h
+  irc-nicklist.h
+  irc-queries.h
+  irc-servers.h
+  irc-servers-setup.h
+  mode-lists.h
+  modes.h
+  module.h
+  netsplit.h
+  servers-idle.h
+  servers-redirect.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-config
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

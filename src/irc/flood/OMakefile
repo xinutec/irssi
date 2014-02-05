@@ -1,0 +1,21 @@
+Name		= irssi-irc-flood
+Description	= Flood protection plugin
+
+C-Sources[] =
+  autoignore.c
+  flood.c
+
+C-Headers[] =
+  autoignore.h
+  flood.h
+  module.h
+
+C-Requires[] =
+  glib-2.0
+  irssi-core
+  irssi-irc-core
+
+OM_CPPFLAGS += -I../core
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)

@@ -1,0 +1,23 @@
+Name		= irssi-config
+Description	= Irssi config library
+Version		= 0.8.16
+
+C-Sources[] =
+  get.c
+  parse.c
+  set.c
+  write.c
+
+C-Headers[] =
+  ../common.h
+  ../irssi-config.h
+  iconfig.h
+  module.h
+
+C-Requires[] =
+  glib-2.0
+
+OM_CFLAGS = -std=gnu89
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)
