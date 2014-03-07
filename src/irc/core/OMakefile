@@ -1,6 +1,5 @@
 Name		= irssi-irc-core
 Description	= Core Irssi library
-Version		= 0.8.16
 
 C-Sources[] =
   bans.c

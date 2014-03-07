@@ -1,6 +1,5 @@
 Name		= irssi-config
 Description	= Irssi config library
-Version		= 0.8.16
 
 C-Sources[] =
   get.c
